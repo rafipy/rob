@@ -280,7 +280,7 @@ def options():
             
             case 4: # Status and Health
                 line()
-                print("Your body has sustained",player.woundCount,"injuries.")
+                print("\nYour body has sustained",player.woundCount,"injuries.")
                 print("The shell will die in", player.health, "more attacks.")
                 print("Exercise caution when treading the sectors.\n")
                 line()
@@ -328,7 +328,7 @@ print("\n" * 100)
 while player.scrapCount < player.winScrap and player.health > 0:
     options()
 
-if player.scrapCount > player.winScrap and player.health > 0:
+if player.scrapCount >= player.winScrap and player.health > 0:
     print("Shell completed all tasks, rerouting to user.")
     print("You live for one more day, Shepard.")
     line()
