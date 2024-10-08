@@ -36,11 +36,11 @@ encounterText = (
 class controller():
     def __init__(self):
         self.health = 3 
-        self.maxHealth = 3
+        self.maxHealth = 5
         self.energy = 4
 
         self.scrapCount = 0
-        self.winScrap = 7
+        self.winScrap = 4
 
         self.woundCount = 0
         
