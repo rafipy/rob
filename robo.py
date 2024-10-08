@@ -183,7 +183,8 @@ def options():
                 
                 while search != "exit" and player.health > 0:
                     flavorText = random.randint(0, 2)
-
+                    if player.scrapCount == player.winScrap:
+                        break
                     if sectors[player.currentSector] > 0:
 
                     # ------------------------------------------------------------------------------------------------------#
